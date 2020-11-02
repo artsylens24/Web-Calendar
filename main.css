@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Quicksand",sans-serif;
+    color: rgb(88, 75, 64);
+}
+
+html{
+    font-size:100%;
+}
+
+.head-title{
+    width:100%;
+    z-index: -1;
+    height:15vh;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.start{
+    width:100%;
+    height:100vh;
+    background-color:white;
+    color:#eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+}
+.calendar{
+    width:45rem;
+    height:52rem;
+    background-color:rgb(243, 231, 208);
+    box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.3);
+}
+.month{
+    width:100%;
+    height:12rem;
+    background-color: #2fd1a1;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    font-size:130%;
+}
+.month b{
+    font-size: 200%;
+}
+h1{
+    color: rgb(36, 33, 33);
+    font-size:250%;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+.month p{
+    font-size: 1.2rem;
+}
+.arrow-left{
+    color: rgb(26, 25, 25);
+    cursor: pointer;
+}
+.arrow-right{
+    color: rgb(26, 25, 25);
+    cursor: pointer;
+}
+.arrow-left:hover{
+    color:rgba(0, 0, 0, 0.63)
+}
+.arrow-right:hover{
+    color:rgba(0, 0, 0, 0.63)
+}
+
+.weekdays{
+    width:100%;
+    height:5rem;
+    padding: 0 0.4rem;
+    display:flex;
+    align-items: center;
+}
+.weekdays div{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width:calc(44.2rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.days{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    padding:0.2rem;
+}
+.days div{
+    font-size:1.4rem;
+    margin: 0.3rem;
+    width:calc(40.2rem/7);
+    height:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hidden{
+    display: none;
+    position: absolute;
+    opacity:0;
+}
+.hiddentoday{
+    display: none;
+    position: absolute;
+    opacity:0;
+    border: .2rem solid #777;
+}
+
+
+.days div:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.prev-date, .next-date{
+    opacity: 50%;
+}
+.today{
+    border: .2rem solid #777;
+}
+
+.entries{
+    background-color: white;
+    margin: 7rem;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+input[type=button]{
+    margin-left: -25.5%;
+    background-color: #f89104;
+    border: none;
+    width: 150%;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+    border-radius: .5em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+input[type=button]:hover{
+    background-color: #ca7703;
+}
+
+.input_left{
+    position: absolute;
+    margin-top: -10em;
+    height: 170%;
+    width: 100%;
+    background:rgba(0,0,0,0.7);
+    z-index: 1;
+    color: white;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.input_data{
+    background-color: white;
+    margin: 13em 0 0;
+    border-radius: .5em;
+    padding: 2em;
+}
+
+input[type=text]{
+    border: 1px solid #707070;
+    width:100%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: .5em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+input[type=date]{
+    border: 1px solid #707070;
+    width:49.365%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius: .5em;
+    margin-top: 0.6em;
+}
+input[type=submit]{
+    margin-top: 1em;
+    background-color: #f89104;
+    border: none;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+    border-radius: .5em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #ca7703;
+}
+
+.close h3{
+    color: white;
+    margin-left: 13.5%;
+    margin-bottom: 0.6em;
+}
+.close:hover{
+    cursor: pointer;
+}
+
+.animate-input_left{
+    animation: fadein 1s forwards;
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

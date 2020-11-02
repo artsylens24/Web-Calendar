@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Calendar</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="head-title">
+        <h1>Employee Holiday Calendar</h1>
+    </div>
+    <div class="input_left" id="input_left">
+        <form action="http://localhost:3456/events" method="POST">
+            <div class="input_data">
+                <h3>Please fill the following details</h3>
+                <input type="text" name="Name" id="Name" placeholder="Enter the name: xyz" required>
+                <br>
+                <input type="text" name="Email" id="Email" placeholder="Enter the email id: xyz@abcmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <br>
+                <input type="date" name="start_date" id="start-date" required placeholder="Start Date">
+                <label for="start-date">Start Date</label>
+                <input type="date" name="end_date" id="end-date" required placeholder="End Date"> 
+                <label for="end-date">End Date</label>
+                <br>
+                <input type="submit" id="submit">
+            </div>
+            <div class="close" id="close">
+                <br>
+                <h3>Click here to close the dialog box</h3>
+            </div>
+        </form>
+    </div>
+    <div class="start">
+        <div class="calendar">
+            <div class="month">
+                <b class="arrow-left"><</b>
+                <div class="date">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <b class="arrow-right">></b>
+            </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days">
+            </div>
+        </div>
+    </div>
+    <div class="entries">
+        <form action="">
+            <input type="button" value="Click here to add entries" id="entry-btn">
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

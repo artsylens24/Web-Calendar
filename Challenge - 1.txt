@@ -1,0 +1,60 @@
+Calendar – Holiday Calendar
+
+ 
+Raj is a manager at Riverus, so one of his activities is to keep tab of everyone’s holiday plans. Writing it down in a diary seems too old fashioned, and keeping an excel just does not cut it. He wants you to make a simple app for him.
+
+ 
+This app shows the 30/31 days of the current month on the screen, arranged as cubes.
+He can go to any month of any year by clicking the forward or backward button.
+When he is on any month, he wants all the holidays to come up as he hovers over a particular date.
+ 
+Let’s say Raj wants to hover over 30th October 2020 to see who all are on leave.  He should see the following:
+
+ Details to capture
+
+	1) Name and Email of the person who is on a holiday
+	2) The start and end date of the particular holiday (If it is just one day then the date, or if its multiple days then start date - end date, e.g. 30th Oct '20 (Fri) - 5th Nov '20 (Thurs))
+ 
+Now, Raj is also the one who enters this information. So he wants a small form on the left side where he can choose to enter a holiday plan for anyone. When a new holiday is entered the details that will get stored are:
+
+	1) Name and Email of the person who is on a holiday
+	2) The start and end date of the particular holiday
+ 
+What you need to do:
+
+Database:
+
+Database needs to be created to store the information.
+Populate it with some holidays for people you know.
+Start with the design, schemas (if needed), and then move to creation.
+ 
+
+API Development:
+
+The API's will have to be thought of for serving this information and also for storing new information.
+Design keeping the front end development in mind.
+Then, move on to development.
+ 
+
+Front End:
+
+Lastly, the front end design and development for consuming the API's and also a decent design using Bootstrap, HTML and CSS.
+ 
+
+No libraries should be used for the calendar or the form, it should be developed from scratch.
+
+Libraries that can be used:
+
+Bootstrap
+JQuery
+Webpack (Front end hosting on server)
+Express (Back end server)
+PG (node-postgres)
+You can use fonts from Google for a better design
+               
+
+Front-End : Javascript Vanilla/React/Vue
+Back-End : NodeJS with Express
+Database : Postgres
+ 
+Time : 4 Days
